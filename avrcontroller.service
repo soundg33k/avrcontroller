@@ -1,0 +1,9 @@
+[Unit]
+Description=AVR controller for Shairport and MPD
+After=mpd.service
+
+[Service]
+ExecStart=/home/pi/avrcontroller/avrcontroller.py [INSERT YAMAHA IP ADDRESS HERE]
+
+[Install]
+WantedBy=default.target
